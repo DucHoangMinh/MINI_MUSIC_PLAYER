@@ -8,30 +8,29 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/css/all.css">
 </head>
+<img src="./assets/image/anh-sai-roi.jpg" alt="">
 <body style="background-color: #ccc">
     <div id="music-player-body">
         <div class="main-header">
             <div class="music-photo-area">
-                <img src="./assets/image/em-cua-ngay-hom-qua.png" alt="" class="music-photo">
+                <img src="" alt="" class="music-photo">
             </div>
             <div class="music-name-area">
                 <h1 class="playing-song-name">
-                    Em của ngày hôm qua
                 </h1>
                 <p class="playing-singer-name">
-                    Sơn Tùng MTP
                 </p>
             </div>
             <div class="song-progress-area">
-                <input type="range" name="" id="" class="song-progress">
+                <input type="range" min="0" max="100" value="0" step="0.01" name="" id="" class="song-progress">
             </div>  
             <audio id="audio" src="./assets/mp3/An-Nut-Tha-Giac-Mo-Son-Tung-M-TP.mp3"></audio>
             <div class="navigation-area">
                 <div class="navigation-icon-wrapper">
                     <i class="navigation-icon fas fa-random"></i>
                 </div>
-                <div class="navigation-icon-wrapper">
-                    <i class="navigation-icon fas fa-backward"></i>
+                <div class="stepbackward navigation-icon-wrapper">
+                    <i class="navigation-icon fas fa-step-backward"></i>
                 </div>
                 <div class="playButton navigation-icon-wrapper">
                     <i class="navigation-icon fas fa-play-circle"></i>
@@ -39,8 +38,8 @@
                 <div class="pauseButton navigation-icon-wrapper unactive">
                     <i class="navigation-icon fas fa-pause-circle"></i>
                 </div>
-                <div class="navigation-icon-wrapper">
-                    <i class="navigation-icon fas fa-forward"></i>
+                <div class="stepforward navigation-icon-wrapper">
+                    <i class="navigation-icon fas fa-step-forward"></i>
                 </div>
                 <div class="navigation-icon-wrapper">
                     <i class="navigation-icon fas fa-redo"></i>
