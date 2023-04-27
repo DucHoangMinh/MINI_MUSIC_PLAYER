@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9,maximum-scale=0.9">
     <title>Mini music player</title>
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/css/all.css">
 </head>
-<img src="./assets/image/anh-sai-roi.jpg" alt="">
 <body style="background-color: #ccc">
     <div id="music-player-body">
         <div class="main-header">
+            <div class="heading-header">
+                <div class="now-playing">
+                    <p>Now Playing</p>
+                </div>
+                <div class="search-box">
+                    <i class="search-icon fas fa-search"></i>
+                    <i class="close-search-icon far fa-times-circle hide"></i>
+                    <input type="text" name="" id="searchTextId" class="unactive-search" placeholder="Nhập tên bài hát bạn muốn tìm">
+                </div>
+            </div>
             <div class="music-photo-area">
-                <img src="" alt="" class="music-photo">
+                <img src="" alt="" class="main-music-photo">
             </div>
             <div class="music-name-area">
                 <h1 class="playing-song-name">
@@ -24,24 +33,24 @@
             <div class="song-progress-area">
                 <input type="range" min="0" max="100" value="0" step="0.01" name="" id="" class="song-progress">
             </div>  
-            <audio id="audio" src="./assets/mp3/An-Nut-Tha-Giac-Mo-Son-Tung-M-TP.mp3"></audio>
+            <audio id="audio"  src="./assets/mp3/An-Nut-Tha-Giac-Mo-Son-Tung-M-TP.mp3"></audio>
             <div class="navigation-area">
                 <div class="navigation-icon-wrapper">
-                    <i class="navigation-icon fas fa-random"></i>
+                    <i class="randomButton navigation-icon fas fa-random"></i>
                 </div>
                 <div class="stepbackward navigation-icon-wrapper">
                     <i class="navigation-icon fas fa-step-backward"></i>
                 </div>
                 <div class="playButton navigation-icon-wrapper">
-                    <i class="navigation-icon fas fa-play-circle"></i>
+                    <i class="navigation-icon fas fa-play-circle" style="font-size: 36px;"></i>
                 </div>
                 <div class="pauseButton navigation-icon-wrapper unactive">
-                    <i class="navigation-icon fas fa-pause-circle"></i>
+                    <i class="navigation-icon fas fa-pause-circle" style="font-size: 36px;"></i>
                 </div>
                 <div class="stepforward navigation-icon-wrapper">
                     <i class="navigation-icon fas fa-step-forward"></i>
                 </div>
-                <div class="navigation-icon-wrapper">
+                <div class="replayButton navigation-icon-wrapper">
                     <i class="navigation-icon fas fa-redo"></i>
                 </div>
             </div>
