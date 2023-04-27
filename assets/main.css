@@ -32,11 +32,13 @@
 .search-box{
     position: absolute;
     right: 0px;
+    -webkit-tap-highlight-color: transparent;
 }
 .search-icon{
     font-size: 20px;
-    font-weight: 500px;
+    font-weight: 600px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .close-search-icon{
     font-size: 24px;
@@ -55,6 +57,9 @@
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     -webkit-text-size-adjust: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    -webkit-tap-highlight-color: transparent;
 }
 #searchTextId:focus{
     outline: none;
@@ -96,11 +101,11 @@ input[type="range"]::-webkit-slider-thumb{
     border-radius: 50%;
 }
 .playing-song-name{
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 0px;
 }
 .playing-singer-name{
-    font-size: 12px;
+    font-size: 14px;
 }
 .song-progress{
     width: 100%;
@@ -126,6 +131,7 @@ input[type="range"]::-webkit-slider-thumb{
 .navigation-icon{
     font-size: 24px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 /* .playButton.navigation-icon-wrapper,
 .pauseButton.navigation-icon-wrapper {
@@ -134,7 +140,7 @@ input[type="range"]::-webkit-slider-thumb{
     justify-content: center;
 } */
 .navigation-icon:hover{
-    font-size: 32px;
+    /* font-size: 32px; */
 }
 .button-active{
     color : #028c6a;
@@ -164,10 +170,12 @@ input[type="range"]::-webkit-slider-thumb{
     -webkit-tap-highlight-color: transparent;
 }
 .song-item.song-playing{
-    background-color: #c0bcbc;
+    color: #fff;
+    background-color: #66a5ad;
 }
 .song-item:hover{
-    background-color: #c0bcbc;
+    background-color: #66a5ad;
+    color: #fff;
 }
 
 .song-photo-area{

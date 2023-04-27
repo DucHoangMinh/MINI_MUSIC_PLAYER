@@ -139,6 +139,10 @@ document.onscroll = function(){
 //Load ra bài hát ở trên cùng 
 var playButton = $('.playButton');
 var pauseButton = $('.pauseButton');
+window.onload = function() {
+    pauseButton.classList.add('unactive');
+    playButton.classList.remove('unactive');
+}
 var currentSongHTML = $('.song-item');
 currentSongHTML.classList.add('song-playing');
 var currentSong = songs[0];
@@ -153,8 +157,7 @@ var loadSong = function(song){
     audioTask.src= song.path;
     audioTask.play();
 }
-loadSong(currentSong);
-
+playButton.onclick = loadSong(currentSong);
 //Lấy ra danh sách các bài hát đang hiển thị
 var songItems = $$('.song-item');
 
